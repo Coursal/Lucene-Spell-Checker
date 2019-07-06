@@ -1,10 +1,6 @@
 package spell_checker;
 
-
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
@@ -19,7 +15,7 @@ import org.apache.lucene.search.spell.SpellChecker;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-public class SpellChecker
+public class Spell_Checker
 {
     public void check_txt_dictionary(String input_word) throws IOException
     {
@@ -52,10 +48,11 @@ public class SpellChecker
     public static void main(String[] args) throws IOException, Throwable
     {
         Scanner scan = new Scanner(System.in);
-        WordChecker word_checker = new WordChecker();
+        Spell_Checker spell_checker = new Spell_Checker();
   
         System.out.print("\nType a word to spell check: ");
         String input_word = scan.next();
 
-        word_checker.check_txt_dictionary(input_word);
+        spell_checker.check_txt_dictionary(input_word);
+    }
 }
