@@ -21,7 +21,7 @@ public class Spell_Checker
     {
         // Creating the index
         Directory directory = FSDirectory.open(Paths.get("Index"));
-        PlainTextDictionary txt_dict = new PlainTextDictionary(Paths.get("eng_and_gr_dictionary.txt"));
+        PlainTextDictionary txt_dict = new PlainTextDictionary(Paths.get("eng_dictionary.txt"));
         SpellChecker checker = new SpellChecker(directory);
 
         System.out.print("\nBuilding index from the .txt dictionary took... ");
@@ -44,6 +44,7 @@ public class Spell_Checker
         for(String suggestion : suggestions)
             System.out.println("\t" + suggestion);
     }
+    
     
     public static void main(String[] args) throws IOException, Throwable
     {
