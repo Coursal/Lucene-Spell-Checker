@@ -14,8 +14,6 @@ It takes some time to execute the first time due to the creation of the index fr
 
 ![](examples/example_2.png)
 
-![](examples/example_3.png)
-
 English dictionary taken from [here](https://github.com/Coursal/crack-a-lackin/blob/master/words.english).
 
 Essential Lucene 8.0.0 API `.jar` files included.
