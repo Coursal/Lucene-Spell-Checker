@@ -10,9 +10,11 @@ Four string distances supported:
 It takes some time to execute the first time due to the creation of the index from the dictionary. After that, the execution time depends on your specs.
 
 ### Examples
-![](http://i67.tinypic.com/34i0axy.png)
+![](examples/example_1.png)
 
-![](http://i63.tinypic.com/nqxw79.png)
+![](examples/example_2.png)
+
+![](examples/example_3.png)
 
 English dictionary taken from [here](https://github.com/Coursal/crack-a-lackin/blob/master/words.english).
 
